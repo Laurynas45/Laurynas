@@ -6,14 +6,13 @@ Public portfolio hub for sculpture, photography, painting, writing, exhibitions 
 
 The page only links to work that is already public. Music is noted as not online yet, until there is a real URL to add.
 
-## GitHub Pages
+## Turn on GitHub Pages
 
-The site is `index.html` and `styles.css` at the root of `main`. A workflow at `.github/workflows/pages.yml` publishes that folder with GitHub Actions.
+`index.html` and `styles.css` are already on `main`. Publishing is a one-time repository setting:
 
-If https://laurynas45.github.io/Laurynas/ does not load yet, turn Pages on once:
+1. Sign in to GitHub and open [Settings → Pages](https://github.com/Laurynas45/Laurynas/settings/pages).
+2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+3. Set **Branch** to `main` and the folder to **`/ (root)`**.
+4. Click **Save**.
 
-1. Open [Settings → Pages](https://github.com/Laurynas45/Laurynas/settings/pages).
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-3. Save if GitHub asks. The workflow **Deploy static content to Pages** then publishes `main`.
-
-Or, without Actions: set **Source** to **Deploy from a branch**, choose branch **`main`** and folder **`/ (root)`**, then **Save**.
+GitHub serves the site at https://laurynas45.github.io/Laurynas/ — usually within a minute of saving.
