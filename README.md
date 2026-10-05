@@ -8,12 +8,12 @@ The page only links to work that is already public. Music is noted as not online
 
 ## GitHub Pages
 
-The site is `index.html` and `styles.css` at the root of `main`.
+The site is `index.html` and `styles.css` at the root of `main`. A workflow at `.github/workflows/pages.yml` publishes that folder with GitHub Actions.
 
-If the URL above does not load yet:
+If https://laurynas45.github.io/Laurynas/ does not load yet, turn Pages on once:
 
-1. Open [Settings → Pages](https://github.com/Laurynas45/Laurynas/settings/pages) for this repository.
-2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-3. Set **Branch** to `main` and folder **`/ (root)`**, then **Save**.
+1. Open [Settings → Pages](https://github.com/Laurynas45/Laurynas/settings/pages).
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Save if GitHub asks. The workflow **Deploy static content to Pages** then publishes `main`.
 
-GitHub then serves the site at https://laurynas45.github.io/Laurynas/
+Or, without Actions: set **Source** to **Deploy from a branch**, choose branch **`main`** and folder **`/ (root)`**, then **Save**.
